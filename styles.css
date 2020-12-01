@@ -142,6 +142,7 @@ section.deezer {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 20px;
+  background: #f9f9f9;
 }
 
 div.grid-info {
@@ -210,13 +211,14 @@ section.deezer-music {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 section.deezer-music h2 {
   font-size: 2.4rem;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 section.deezer-music p {
@@ -227,4 +229,164 @@ section.deezer-music p {
 
 section.deezer-music i {
   text-align: center;
+}
+
+.deezer-recommendation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.deezer-fre {
+  background: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 570px;
+  padding: 20px 30px;
+}
+
+.deezer-fre h3 {
+  color: #32323d;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div.deezer-button {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#button1 {
+  background: #8e8e94;
+  color: #fff;
+  padding: 10px 35px;
+  font-size: 1rem;
+}
+
+div.tag {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.tag a {
+  color: #2d96c8;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+ul {
+  padding-top: 30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.deezer-fre1 {
+  background: #2d96c8;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 570px;
+  padding: 20px 30px;
+}
+
+.deezer-fre1 h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div.deezer-button {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#button2 {
+  background: #ef5466;
+  color: #f0f0f0;
+  padding: 10px 35px;
+  font-size: 1rem;
+}
+
+div.tag1 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.tag1 a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.deezer-fre2 {
+  background: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  height: 570px;
+  padding: 20px 30px;
+}
+
+.deezer-fre2 h3 {
+  color: #32323d;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div.deezer-button {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#button2 {
+  background: #ef5466;
+  color: #f0f0f0;
+  padding: 10px 35px;
+  font-size: 1rem;
+}
+
+div.tag2 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.tag2 a {
+  color: #2d96c8;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+div.deezer-remains {
+  padding-top: 50px;
+}
+
+div.deezer-remains p {
+  color: #90909d;
+  font-size: 0.8rem;
 }
