@@ -16,8 +16,7 @@ button {
 .logo {
   cursor: pointer;
   margin-right: auto;
-  width: 140px;
-  height: 130px;
+  width: 180px;
 }
 
 header {
@@ -384,9 +383,152 @@ div.tag2 a {
 
 div.deezer-remains {
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 div.deezer-remains p {
   color: #90909d;
   font-size: 0.8rem;
+}
+
+/* Section Annual Plan Styling */
+
+section.annual-plan {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+}
+
+div.plan1 h3 {
+  color: #32323d;
+  font-size: 1.9rem;
+}
+
+div.plan1 p {
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+div.annual-subscribe {
+  padding-top: 30px;
+}
+
+div.annual-subscribe a {
+  border: 2px solid #32323d;
+  padding: 10px 40px;
+  color: #32323d;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* Section Deezer Hifi Styling */
+
+section.deezer-hifi {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+}
+
+div.plan1 h3 {
+  color: #32323d;
+  font-size: 1.9rem;
+}
+
+div.plan1 p {
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+div.hifi-learn {
+  padding-top: 30px;
+}
+
+div.hifi-learn a {
+  border: 2px solid #32323d;
+  padding: 10px 40px;
+  color: #32323d;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* Deezer Footer Styling */
+
+section.deezer-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: #32323d;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+div.footer-image img {
+  width: 180px;
+  padding-top: 40px;
+}
+
+#icons {
+  padding-left: 10px;
+}
+
+div.footer-image i {
+  color: #6e6e79;
+  margin: 5px;
+  border: 2px solid #6e6e79;
+  border-radius: 50%;
+  padding: 7px 6px;
+}
+
+div.footer-image i:hover {
+  background: #6e6e79;
+  color: #32323d;
+}
+
+div.footer-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.footer-grid li {
+  list-style: none;
+  padding-top: 20px;
+}
+
+div.footer-grid li a {
+  color: #ccccc3;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+div.heading h4 {
+  color: #2d96c8;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+div.footer-lang {
+}
+
+div.footer-lang h5 {
+  color: #ccccc3;
+  font-size: 1rem;
+}
+
+div.footer-lang p {
+  color: #6e6e79;
+  font-size: 0.7rem;
 }
