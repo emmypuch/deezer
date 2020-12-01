@@ -161,7 +161,7 @@ div.mini-info h4 {
 
 div.mini-info p {
   padding-top: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #32323d;
 }
 
@@ -245,14 +245,18 @@ section.deezer-music i {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-  height: 570px;
-  padding: 20px 30px;
+  height: 620px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .deezer-fre h3 {
   color: #32323d;
   font-size: 2rem;
   text-align: center;
+  margin-top: 10px;
 }
 
 div.deezer-button {
@@ -280,6 +284,7 @@ div.tag a {
   color: #2d96c8;
   font-weight: 500;
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 ul {
@@ -301,14 +306,18 @@ ul li {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-  height: 570px;
-  padding: 20px 30px;
+  height: 620px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .deezer-fre1 h3 {
   color: #fff;
   font-size: 2rem;
   text-align: center;
+  margin-top: 10px;
 }
 
 div.deezer-button {
@@ -326,7 +335,7 @@ button#button2 {
 }
 
 div.tag1 {
-  padding-top: 10px;
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,6 +345,7 @@ div.tag1 a {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 .deezer-fre2 {
@@ -344,18 +354,22 @@ div.tag1 a {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-  height: 570px;
-  padding: 20px 30px;
+  height: 620px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .deezer-fre2 h3 {
   color: #32323d;
   font-size: 2rem;
   text-align: center;
+  margin-top: 10px;
 }
 
 div.deezer-button {
-  padding-top: 10px;
+  padding-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,7 +383,7 @@ button#button2 {
 }
 
 div.tag2 {
-  padding-top: 10px;
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,6 +393,7 @@ div.tag2 a {
   color: #2d96c8;
   font-weight: 500;
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 div.deezer-remains {
