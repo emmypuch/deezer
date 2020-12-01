@@ -474,9 +474,13 @@ section.deezer-footer {
   padding-bottom: 60px;
 }
 
+div.footer-image {
+  padding-top: 70px;
+}
+
 div.footer-image img {
   width: 180px;
-  padding-top: 40px;
+  margin-bottom: 25px;
 }
 
 #icons {
@@ -496,18 +500,18 @@ div.footer-image i:hover {
   color: #32323d;
 }
 
-div.footer-grid {
+div.footer-links-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-div.footer-grid li {
+div.footer-links-wrap li {
   list-style: none;
   padding-top: 20px;
 }
 
-div.footer-grid li a {
+div.footer-links-wrap li a {
   color: #ccccc3;
   font-size: 0.9rem;
   font-weight: 900;
@@ -521,6 +525,10 @@ div.heading h4 {
 }
 
 div.footer-lang {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 div.footer-lang h5 {
