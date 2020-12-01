@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+li,
+a,
+button {
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 140px;
+  height: 130px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding: 9px 20px; */
+  padding-left: 60px;
+  padding-right: 60px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: #32323d;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 900;
+  transition: all 0.3s ease 0s;
+}
+
+button.btn1 {
+  background: white;
+  color: #2d96c8;
+  border: 2px solid #2d96c8;
+}
+
+button.btn1:hover {
+  border: 2px solid #03608a;
+}
+
+button.btn2 {
+  background: #2d96c8;
+  color: #ffffff;
+}
+
+button.btn2:hover {
+  background: #03608a;
+}
+
+/* Hero Section Styling */
+
+section.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  /* padding-right: 50px; */
+}
+
+div.intro {
+  padding-top: 50px;
+}
+
+div.intro h1 {
+  color: #32323d;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+div.intro h3 {
+  color: #ef5466;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+div.button {
+  padding-top: 30px;
+}
+
+#btn-premium {
+  background: #ef5466;
+  color: #fce6e9;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+#btn-free {
+  background: #fff;
+  color: #32323d;
+  border: 2px solid #32323d;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 15px 40px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+div.image {
+  position: relative;
+  top: -30px;
+}
+
+div.image img {
+  width: 800px;
+}
+
+/* Deezer Section Styling */
+
+section.deezer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+
+div.grid-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+div.mini-info h4 {
+  padding-top: 40px;
+  font-size: 1.5rem;
+  color: #32323d;
+}
+
+div.mini-info p {
+  padding-top: 20px;
+  font-size: 1.1rem;
+  color: #32323d;
+}
+
+.phone-info {
+  padding-top: 80px;
+}
+
+.phone-info h1 {
+  color: #32323d;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/* Section Deezer Bg1 Styling */
+
+section.deezer-bg1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: #ef5466;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.deezer-icons i {
+  color: #fce6e9;
+  margin: 10px;
+  font-size: 2.6rem;
+}
+
+div.deezer-devices h2 {
+  color: #fce6e9;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+div.deezer-devices p {
+  padding-top: 30px;
+  color: #fce6e9;
+  font-size: 1.3rem;
+}
+
+/* Section Deezer-music Styling */
+
+section.deezer-music {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.deezer-music h2 {
+  font-size: 2.4rem;
+}
+
+section.deezer-music p {
+  text-align: center;
+  padding-top: 30px;
+  color: #adaaa1;
+}
+
+section.deezer-music i {
+  text-align: center;
+}
