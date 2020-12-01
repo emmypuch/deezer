@@ -24,8 +24,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   /* padding: 9px 20px; */
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   border-bottom: 2px solid #f0f0f0;
 }
 
@@ -35,7 +35,7 @@ header {
 
 .nav-links li {
   display: inline-block;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
 }
 
 .nav-links li a {
@@ -46,8 +46,9 @@ header {
 }
 
 button {
-  margin-left: 20px;
-  padding: 10px 30px;
+  position: relative;
+  top: 13px;
+  margin-left: 15px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -60,6 +61,7 @@ button.btn1 {
   background: white;
   color: #2d96c8;
   border: 2px solid #2d96c8;
+  padding: 10px 30px;
 }
 
 button.btn1:hover {
@@ -69,6 +71,7 @@ button.btn1:hover {
 button.btn2 {
   background: #2d96c8;
   color: #ffffff;
+  padding: 10px 30px;
 }
 
 button.btn2:hover {
@@ -80,7 +83,7 @@ button.btn2:hover {
 section.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 50px;
+  padding-left: 70px;
   /* padding-right: 50px; */
 }
 
@@ -100,7 +103,7 @@ div.intro h3 {
   font-weight: 700;
 }
 
-div.button {
+div.premium-buttons {
   padding-top: 30px;
 }
 
@@ -138,8 +141,8 @@ div.image img {
 section.deezer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 20px;
   background: #f9f9f9;
 }
@@ -207,17 +210,14 @@ div.deezer-devices p {
 /* Section Deezer-music Styling */
 
 section.deezer-music {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 60px;
 }
 
 section.deezer-music h2 {
   font-size: 2.4rem;
   text-align: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 section.deezer-music p {
@@ -394,8 +394,8 @@ div.deezer-remains p {
 /* Section Annual Plan Styling */
 
 section.annual-plan {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px;
@@ -430,8 +430,8 @@ div.annual-subscribe a {
 /* Section Deezer Hifi Styling */
 
 section.deezer-hifi {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -468,8 +468,8 @@ section.deezer-footer {
   display: grid;
   grid-template-columns: auto auto;
   background: #32323d;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 50px;
   padding-bottom: 60px;
 }
