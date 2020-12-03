@@ -214,10 +214,7 @@ section.hero {
   }
 
   div.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
+    display: none;
   }
 
   .premium-buttons {
@@ -225,17 +222,23 @@ section.hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #btn-premium {
     font-size: 1.2rem;
-    padding: 20px 50px;
+    text-align: center;
+    /* padding: 20px 50px; */
+    width: 100%;
   }
 
   #btn-free {
     font-size: 1.2rem;
-    padding: 20px 50px;
+    margin-right: 10px;
     margin-top: 10px;
+    text-align: center;
+    width: 90%;
   }
 }
 
@@ -473,6 +476,7 @@ section.deezer-music i {
   padding-bottom: 50px;
   padding-right: 30px;
   padding-left: 30px;
+  margin-bottom: 10px;
 }
 
 .deezer-fre h3 {
@@ -494,6 +498,8 @@ button#button1 {
   color: #fff;
   padding: 10px 35px;
   font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 div.tag {
@@ -532,6 +538,7 @@ ul li {
   padding-bottom: 50px;
   padding-right: 30px;
   padding-left: 30px;
+  margin-bottom: 10px;
 }
 
 .deezer-fre1 h3 {
@@ -553,6 +560,8 @@ button#button2 {
   color: #f0f0f0;
   padding: 10px 35px;
   font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 div.tag1 {
@@ -579,6 +588,7 @@ div.tag1 a {
   padding-bottom: 50px;
   padding-right: 30px;
   padding-left: 30px;
+  margin-bottom: 10px;
 }
 
 .deezer-fre2 h3 {
@@ -600,6 +610,8 @@ button#button2 {
   color: #f0f0f0;
   padding: 10px 35px;
   font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 div.tag2 {
@@ -743,16 +755,13 @@ section.deezer-footer {
 
 @media (max-width: 600px) {
   section.deezer-footer {
-    display: inline-block;
-    /* flex-direction: column; */
-    /* padding-left: 20px;
-    padding-right: 10px; */
+    display: block;
   }
 
   div.footer-links-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 }
 
