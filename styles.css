@@ -230,7 +230,7 @@ section.hero {
     font-size: 1.2rem;
     text-align: center;
     /* padding: 20px 50px; */
-    width: 100%;
+    width: 90%;
   }
 
   #btn-free {
@@ -408,7 +408,7 @@ div.deezer-devices p {
   }
 
   div.deezer-icons i {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-top: 20px;
   }
 }
