@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Deezer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -15,15 +17,20 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/deezer-logo.png" alt="deezer logo" />
       <nav>
-        <ul class="nav-links">
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Plans</a></li>
+        <ul class="menu">
+          <li class="logo">
+            <a href="#"
+              ><img class="logo" src="images/deezer-logo.png" alt="deezer logo"
+            /></a>
+          </li>
+          <li class="item"><a href="#">Download</a></li>
+          <li class="item"><a href="#">Plans</a></li>
+          <li class="item button"><a href="#">Login</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="toggle"><span class="bars"></span></li>
         </ul>
       </nav>
-      <button class="btn1">Log in</button>
-      <button class="btn2">Sign up</button>
     </header>
 
     <section class="hero">

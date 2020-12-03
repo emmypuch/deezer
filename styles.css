@@ -4,7 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 900;
   font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  padding-left: 70px;
+  padding-right: 70px;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 li,
@@ -13,69 +20,181 @@ button {
   text-decoration: none;
 }
 
-.logo {
-  cursor: pointer;
-  margin-right: auto;
+/* body {
+  padding: 5px 20px;
+} */
+
+.logo img {
   width: 180px;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* padding: 9px 20px; */
-  padding-left: 70px;
-  padding-right: 70px;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.nav-links {
+ul {
   list-style: none;
 }
 
-.nav-links li {
-  display: inline-block;
-  /* padding: 0px 20px; */
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
+ul a {
   color: #32323d;
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+.menu li {
   font-size: 1.2rem;
-  font-weight: 900;
+  /* padding: 15px 5px; */
 }
 
-button {
-  position: relative;
-  top: 13px;
-  margin-left: 15px;
-  border: none;
-  border-radius: 50px;
+.menu li a {
+  display: block;
+}
+
+.button.secondary {
+  border-bottom: 1px solid #adaaa1;
+}
+
+/* Mobile menu */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+.toggle {
   cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 900;
-  transition: all 0.3s ease 0s;
 }
 
-button.btn1 {
-  background: white;
-  color: #2d96c8;
-  border: 2px solid #2d96c8;
-  padding: 10px 30px;
+.bars {
+  background: #32323d;
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: relative;
 }
 
-button.btn1:hover {
-  border: 2px solid #03608a;
+.bars::before,
+.bars::after {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+  content: "";
 }
 
-button.btn2 {
-  background: #2d96c8;
-  color: #ffffff;
-  padding: 10px 30px;
+.bars::before {
+  top: 5px;
 }
 
-button.btn2:hover {
-  background: #03608a;
+.bars::after {
+  top: -5px;
+}
+
+/* Tablet Menu */
+
+@media (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
+  .button.secondary {
+    border: 0;
+  }
+  .button a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #fff;
+    color: #2d96c8;
+    border: 2px solid #2d96c8;
+    border-radius: 50em;
+  }
+
+  .button.secondary a {
+    background: #2d96c8;
+    color: #fff;
+    border: none;
+  }
+
+  .button a:hover {
+    transition: all 0.25s;
+  }
+
+  .button:not(.secondary) a:hover {
+    color: #03608a;
+    border: 2px solid #03608a;
+  }
+
+  .button.secondary a:hover {
+    color: #fff;
+    background: #03608a;
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  /* .menu li {
+    padding: 15px 10px;
+  } */
+
+  .menu li.button {
+    padding-right: 0;
+  }
 }
 
 /* Hero Section Styling */
@@ -85,6 +204,50 @@ section.hero {
   grid-template-columns: 1fr 1fr;
   padding-left: 70px;
   /* padding-right: 50px; */
+}
+
+@media (max-width: 468px) {
+  section.hero {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  div.intro h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  div.intro h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  div.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .premium-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btn-premium {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+  }
+
+  #btn-free {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    margin-top: 10px;
+  }
 }
 
 div.intro {
@@ -172,7 +335,37 @@ div.mini-info p {
 .phone-info h1 {
   color: #32323d;
   font-size: 2.5rem;
-  font-weight: 900;
+}
+
+/* Mobile For Deezer Section */
+
+@media (max-width: 468px) {
+  section.deezer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  div.grid-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.phone-info h1 {
+    text-align: center;
+  }
+
+  .phone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #phone {
+    height: 300px;
+  }
 }
 
 /* Section Deezer Bg1 Styling */
@@ -198,13 +391,36 @@ div.deezer-icons i {
 div.deezer-devices h2 {
   color: #fce6e9;
   font-size: 2.3rem;
-  font-weight: 900;
 }
 
 div.deezer-devices p {
   padding-top: 30px;
   color: #fce6e9;
   font-size: 1.3rem;
+}
+
+/* Mobile Section Deezer Bg1 Styling */
+
+@media (max-width: 468px) {
+  section.deezer-bg1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  div.deezer-devices h2 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  div.deezer-devices p {
+    font-size: 1.1rem;
+  }
+
+  div.deezer-icons i {
+    font-size: 2rem;
+  }
 }
 
 /* Section Deezer-music Styling */
@@ -237,6 +453,26 @@ section.deezer-music i {
   flex-direction: row;
   gap: 5px;
   padding-top: 10px;
+}
+
+/* Mobile Style */
+
+@media (max-width: 468px) {
+  .deezer-recommendation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div.deezer-remains {
+    text-align: center;
+  }
+
+  div.deezer-remains p {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
 }
 
 .deezer-fre {
@@ -288,7 +524,7 @@ div.tag a {
 }
 
 ul {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -419,6 +655,25 @@ section.annual-plan {
   background: #f0f0f0;
 }
 
+/* Mobile Section Annual Plan Styling */
+
+@media (max-width: 468px) {
+  section.annual-plan {
+    padding-left: 20px;
+    padding-right: 10px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  div.plan1 h3 {
+    font-size: 1.7rem;
+  }
+
+  div.plan1 p {
+    font-size: 1rem;
+  }
+}
+
 div.plan1 h3 {
   color: #32323d;
   font-size: 1.9rem;
@@ -454,6 +709,21 @@ section.deezer-hifi {
   background: #f0f0f0;
 }
 
+/* Mobile Section Deezer Hifi Styling */
+
+@media (max-width: 600px) {
+  section.deezer-hifi {
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.plan1 p {
+    font-size: 1rem;
+  }
+}
+
 div.plan1 h3 {
   color: #32323d;
   font-size: 1.9rem;
@@ -487,6 +757,23 @@ section.deezer-footer {
   padding-right: 70px;
   padding-top: 50px;
   padding-bottom: 60px;
+}
+
+/* Mobile Deezer Footer Styling */
+
+@media (max-width: 600px) {
+  section.deezer-footer {
+    display: inline-block;
+    /* flex-direction: column; */
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  div.footer-links-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 div.footer-image {
