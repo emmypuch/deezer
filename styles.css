@@ -20,10 +20,6 @@ button {
   text-decoration: none;
 }
 
-/* body {
-  padding: 5px 20px;
-} */
-
 .logo img {
   width: 180px;
 }
@@ -43,7 +39,6 @@ ul a:hover {
 
 .menu li {
   font-size: 1.2rem;
-  /* padding: 15px 5px; */
 }
 
 .menu li a {
@@ -188,10 +183,6 @@ ul a:hover {
     order: 2;
   }
 
-  /* .menu li {
-    padding: 15px 10px;
-  } */
-
   .menu li.button {
     padding-right: 0;
   }
@@ -203,24 +194,22 @@ section.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 70px;
-  /* padding-right: 50px; */
 }
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   section.hero {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    padding-right: 10px;
   }
 
   div.intro h1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   div.intro h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -240,12 +229,12 @@ section.hero {
 
   #btn-premium {
     font-size: 1.2rem;
-    padding: 20px 40px;
+    padding: 20px 50px;
   }
 
   #btn-free {
     font-size: 1.2rem;
-    padding: 20px 40px;
+    padding: 20px 50px;
     margin-top: 10px;
   }
 }
@@ -257,13 +246,11 @@ div.intro {
 div.intro h1 {
   color: #32323d;
   font-size: 2.4rem;
-  font-weight: 900;
 }
 
 div.intro h3 {
   color: #ef5466;
   font-size: 1.9rem;
-  font-weight: 700;
 }
 
 div.premium-buttons {
@@ -284,7 +271,6 @@ div.premium-buttons {
   color: #32323d;
   border: 2px solid #32323d;
   font-size: 1.2rem;
-  font-weight: 900;
   padding: 15px 40px;
   border-radius: 50px;
   margin-left: 20px;
@@ -339,7 +325,7 @@ div.mini-info p {
 
 /* Mobile For Deezer Section */
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   section.deezer {
     display: flex;
     flex-direction: column;
@@ -364,7 +350,7 @@ div.mini-info p {
   }
 
   #phone {
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -401,7 +387,7 @@ div.deezer-devices p {
 
 /* Mobile Section Deezer Bg1 Styling */
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   section.deezer-bg1 {
     display: flex;
     flex-direction: column-reverse;
@@ -420,6 +406,7 @@ div.deezer-devices p {
 
   div.deezer-icons i {
     font-size: 2rem;
+    padding-top: 20px;
   }
 }
 
@@ -457,7 +444,7 @@ section.deezer-music i {
 
 /* Mobile Style */
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   .deezer-recommendation {
     display: flex;
     justify-content: center;
@@ -518,13 +505,11 @@ div.tag {
 
 div.tag a {
   color: #2d96c8;
-  font-weight: 500;
   font-size: 1rem;
   margin-left: 10px;
 }
 
 ul {
-  /* padding-top: 30px; */
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -579,7 +564,6 @@ div.tag1 {
 
 div.tag1 a {
   color: #fff;
-  font-weight: 500;
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -627,7 +611,6 @@ div.tag2 {
 
 div.tag2 a {
   color: #2d96c8;
-  font-weight: 500;
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -657,10 +640,9 @@ section.annual-plan {
 
 /* Mobile Section Annual Plan Styling */
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   section.annual-plan {
     padding-left: 20px;
-    padding-right: 10px;
     flex-direction: column;
     display: flex;
   }
@@ -714,7 +696,6 @@ section.deezer-hifi {
 @media (max-width: 600px) {
   section.deezer-hifi {
     padding-left: 20px;
-    padding-right: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -744,7 +725,6 @@ div.hifi-learn a {
   color: #32323d;
   border-radius: 50px;
   font-size: 1rem;
-  font-weight: 900;
 }
 
 /* Deezer Footer Styling */
@@ -765,8 +745,8 @@ section.deezer-footer {
   section.deezer-footer {
     display: inline-block;
     /* flex-direction: column; */
-    padding-left: 20px;
-    padding-right: 10px;
+    /* padding-left: 20px;
+    padding-right: 10px; */
   }
 
   div.footer-links-wrap {
@@ -778,6 +758,17 @@ section.deezer-footer {
 
 div.footer-image {
   padding-top: 70px;
+}
+
+@media (max-width: 600px) {
+  div.footer-image {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #8e8e94;
+  }
 }
 
 div.footer-image img {
@@ -797,6 +788,12 @@ div.footer-image i {
   padding: 7px 6px;
 }
 
+@media (max-width: 600px) {
+  #icons {
+    padding-bottom: 20px;
+  }
+}
+
 div.footer-image i:hover {
   background: #6e6e79;
   color: #32323d;
@@ -806,6 +803,19 @@ div.footer-links-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  div.footer-links-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    border-bottom: 2px solid #8e8e94;
+    padding-bottom: 20px;
+  }
 }
 
 div.footer-links-wrap li {
@@ -822,7 +832,7 @@ div.footer-links-wrap li a {
 div.heading h4 {
   color: #2d96c8;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
@@ -831,6 +841,14 @@ div.footer-lang {
   align-items: flex-end;
   flex-direction: column;
   margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  div.footer-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 div.footer-lang h5 {
